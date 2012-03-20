@@ -11,9 +11,7 @@ def initialize_input_array(filename)
 end
 
 def count_inversions(input_array=[])
-  if input_array.size <= 1
-    return input_array
-  end
+  return input_array if input_array.size <= 1
 
   first_sorted_array = count_inversions input_array[0..input_array.size / 2 - 1]
   second_sorted_array = count_inversions input_array[input_array.size / 2..input_array.size]
@@ -28,6 +26,8 @@ def count_inversions(input_array=[])
     elsif j < second_sorted_array.size && (i >= first_sorted_array.size || first_sorted_array[i] > second_sorted_array[j])
       result_array[k] = second_sorted_array[j]
       j += 1
+      
+      # counting inversions
       $inversion_counter += first_sorted_array.size - i
     end
   end
