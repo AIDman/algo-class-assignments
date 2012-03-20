@@ -23,7 +23,7 @@ public class CountInversions {
 	}
 	
 	private static int[] countInversions(int[] input){
-		if (input.length == 1){
+		if (input.length <= 1){
 			return input;
 		}
 		
