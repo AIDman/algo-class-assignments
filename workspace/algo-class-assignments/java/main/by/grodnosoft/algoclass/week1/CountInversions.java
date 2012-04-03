@@ -8,6 +8,14 @@ import java.io.InputStreamReader;
 import java.math.BigDecimal;
 import java.util.Arrays;
 
+/**
+ * The file contains all the 100,000 integers between 1 and 100,000 (including both) in some random order( no integer is repeated).
+ * Your task is to find the number of inversions in the file given (every row has a single integer between 1 and 100,000). 
+ * Assume your array is from 1 to 100,000 and i-th row of the file gives you the i-th entry of the array.
+ * 
+ * @author ddudnik
+ *
+ */
 public class CountInversions {
 	
 	private static BigDecimal iversionCounter = new BigDecimal(0);
