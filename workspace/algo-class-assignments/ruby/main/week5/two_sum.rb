@@ -10,6 +10,8 @@
 # from pairs from the input file, then your answer should be "111101011" (without the quotes). 
 # We reiterate that the answer should be in the same order as the target sums listed above (i.e., in increasing order of the target).
 
+# test github commit!
+
 def initialize_input_hash(filename)
   input = {}
   File.open(filename, 'r') do |file|
